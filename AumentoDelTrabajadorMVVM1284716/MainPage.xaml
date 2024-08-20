@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AumentoDelTrabajadorMVVM1284716"
+             x:Class="AumentoDelTrabajadorMVVM1284716.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:Aumento />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20">
+        <Label Text="Digite el sueldo Actual :" />
+        <Entry Keyboard="Numeric"
+           Text="{Binding Sueldo, Mode=TwoWay}" />
+
+        <Label Text="Nuevo Sueldo:" />
+        <Label Text="{Binding NuevoSueldo}" />
+    </StackLayout>
+
+</ContentPage>
